@@ -13,6 +13,7 @@ scoreboard objectives remove TimerSecond
 scoreboard objectives remove Height
 scoreboard objectives remove EndRandom
 scoreboard objectives remove StartRandom
+gamerule doTileDrops true
 
 # Reset settings to default
 function randomitemgiver:settings/pause
