@@ -27,6 +27,8 @@ clear @a
 kill @e[type=!player]
 # Teleport all players to the default location
 tp @a 5 -12 0
+effect clear @a
+effect give @a saturation infinite 0 true
 
 fill 1179 40 1541 1221 25 1499 minecraft:air
 setblock 1221 29 1520 minecraft:bedrock

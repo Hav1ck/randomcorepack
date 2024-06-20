@@ -45,5 +45,5 @@ execute if score random RandomEffect matches 9 run tellraw @a {"text": "PVP aren
 execute if score random RandomEffect matches 9 run function randomcore:random/randomevents/pvp
 
 # Random Effect 10 to 13: Default Game
-execute if score random RandomEffect matches 10..13 run title @a title {"text":"Default Game","bold":true,"color":"green"}
-execute if score random RandomEffect matches 10..13 run tellraw @a {"text": "Default game nothing changed","color": "green"}
+execute if score random RandomEffect matches 10 run title @a title {"text":"Default Game","bold":true,"color":"green"}
+execute if score random RandomEffect matches 10 run tellraw @a {"text": "Default game nothing changed","color": "green"}

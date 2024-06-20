@@ -1,0 +1,1 @@
+item replace entity @a armor.chest with minecraft:elytra

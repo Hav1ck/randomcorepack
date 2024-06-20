@@ -16,6 +16,7 @@ execute if score start StartKingOfTheHill matches 1 run function randomcore:king
 
 # Execute the function 'randomcore:fun/triggers'
 function randomcore:fun/triggers
+function randomcore:random/randomevents/startrandomeffect
 
 # At the location of all firework_rockets, give all players the 'resistance' effect for 1 second with amplifier 255 and hide particles
 execute at @e[type=firework_rocket] run effect give @a resistance 1 255 true
