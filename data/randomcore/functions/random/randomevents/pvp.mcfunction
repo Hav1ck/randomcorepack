@@ -6,4 +6,4 @@
 ##
 
 give @a diamond_sword
-fill 1179 29 1541 1221 29 1499 minecraft:bedrock
+fill 1174 29 1546 1226 29 1494 minecraft:bedrock
