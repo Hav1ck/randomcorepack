@@ -6,6 +6,7 @@
 ##
 
 scoreboard players set random StopRandom 1
+scoreboard players set default RandomEffect 0
 
 # Random Effect 1: Double HP
 execute if score random RandomEffect matches 1 run title @a title {"text":"Double HP!","bold":true,"color":"green"}
@@ -15,6 +16,7 @@ execute if score random RandomEffect matches 1 run function randomcore:random/ra
 # Random Effect 2: Default Game
 execute if score random RandomEffect matches 2 run title @a title {"text":"Default Game","bold":true,"color":"green"}
 execute if score random RandomEffect matches 2 run tellraw @a {"text": "Default game nothing changed","color": "green"}
+execute if score random RandomEffect matches 2 run scoreboard players set default RandomEffect 1
 
 # Random Effect 3: Slow Falling
 execute if score random RandomEffect matches 3 run title @a title {"text":"Slow Falling!","bold":true,"color":"green"}
@@ -24,6 +26,7 @@ execute if score random RandomEffect matches 3 run function randomcore:random/ra
 # Random Effect 4 and 5: Default Game
 execute if score random RandomEffect matches 4..5 run title @a title {"text":"Default Game","bold":true,"color":"green"}
 execute if score random RandomEffect matches 4..5 run tellraw @a {"text": "Default game nothing changed","color": "green"}
+execute if score random RandomEffect matches 4..5 run scoreboard players set default RandomEffect 1
 
 # Random Effect 6: Elytra
 execute if score random RandomEffect matches 6 run title @a title {"text":"Elytra!","bold":true,"color":"green"}
@@ -33,6 +36,7 @@ execute if score random RandomEffect matches 6 run function randomcore:random/ra
 # Random Effect 7: Default Game
 execute if score random RandomEffect matches 7 run title @a title {"text":"Default Game","bold":true,"color":"green"}
 execute if score random RandomEffect matches 7 run tellraw @a {"text": "Default game nothing changed","color": "green"}
+execute if score random RandomEffect matches 7 run scoreboard players set default RandomEffect 1
 
 # Random Effect 8: Bow
 execute if score random RandomEffect matches 8 run title @a title {"text":"Bows!","bold":true,"color":"green"}
@@ -47,3 +51,4 @@ execute if score random RandomEffect matches 9 run function randomcore:random/ra
 # Random Effect 10 to 13: Default Game
 execute if score random RandomEffect matches 10 run title @a title {"text":"Default Game","bold":true,"color":"green"}
 execute if score random RandomEffect matches 10 run tellraw @a {"text": "Default game nothing changed","color": "green"}
+execute if score random RandomEffect matches 10 run scoreboard players set default RandomEffect 1
