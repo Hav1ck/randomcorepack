@@ -91,10 +91,8 @@ team modify friendlyfire deathMessageVisibility never
 
 
 #need to do:
-#reset bigger territory
-#reset the lowest layer because of falling blocks
-#make map more interesting 
 #add a few map variations 
+
 #fix king of the hill
 #make beautifull lobby for random and king of the hill
 #tekeport animation

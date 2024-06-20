@@ -33,10 +33,16 @@ execute if score StartRandom Timer matches 70 run function randomitemgiver:setti
 execute if score StartRandom Timer matches 70 run function randomcore:random/randomevents/runrandom
 
 
-# Display countdown titles to all players
+# Display countdown titles to all players and play sounds
 execute if score StartRandom Timer matches 20 run title @a title {"text":"3","bold":true,"color":"red"}
+execute if score StartRandom Timer matches 20 run playsound minecraft:block.note_block.hat master @a ~ ~ ~ 1 1 1
+
 execute if score StartRandom Timer matches 40 run title @a title {"text":"2","bold":true,"color":"yellow"}
+execute if score StartRandom Timer matches 40 run playsound minecraft:block.note_block.hat master @a ~ ~ ~ 1 1 1
+
 execute if score StartRandom Timer matches 60 run title @a title {"text":"1","bold":true,"color":"green"}
+execute if score StartRandom Timer matches 60 run playsound minecraft:block.note_block.hat master @a ~ ~ ~ 1 1 1
+
 
 
 # Execute tick functions for ongoing game checks
@@ -52,10 +58,10 @@ execute as @a[scores={TpFourth=1}] if score StartRandom Timer matches 10..70 run
 
 particle enchant 1200 29 1520 1 1 1 1 10 force
 
-particle enchant 1200 29 1499 1 1 1 1 10 force
-particle enchant 1200 29 1541 1 1 1 1 10 force
-particle enchant 1221 29 1520 1 1 1 1 10 force
-particle enchant 1179 29 1520 1 1 1 1 10 force
+execute if score StartRandom Timer matches ..70 run particle enchant 1200 29 1499 1 1 1 1 10 force
+execute if score StartRandom Timer matches ..70 run particle enchant 1200 29 1541 1 1 1 1 10 force
+execute if score StartRandom Timer matches ..70 run particle enchant 1221 29 1520 1 1 1 1 10 force
+execute if score StartRandom Timer matches ..70 run particle enchant 1179 29 1520 1 1 1 1 10 force
 
 execute if score StartRandom Timer matches 60 run playsound minecraft:entity.ender_dragon.growl master @a 1200 29 1520 1 1 1
 
