@@ -104,3 +104,5 @@ team modify friendlyfire deathMessageVisibility never
 #try attributes to make you an ender dragon
 #also could be an option to create explosions on the place where you look
 #add random rush 2v2
+
+#create not random minigame mode

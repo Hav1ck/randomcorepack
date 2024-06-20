@@ -15,6 +15,9 @@ scoreboard objectives remove EndRandom
 scoreboard objectives remove StartRandom
 gamerule doTileDrops true
 
+scoreboard players set random StopRandom 0
+
+
 # Reset settings to default
 function randomitemgiver:settings/pause
 
@@ -37,3 +40,4 @@ setblock 1200 29 1499 minecraft:bedrock
 setblock 1179 29 1520 minecraft:bedrock
 setblock 1200 29 1541 minecraft:bedrock
 fill 1199 29 1521 1201 29 1519 minecraft:bedrock
+
