@@ -39,6 +39,7 @@ scoreboard players set endrandom EndRandom 0
 scoreboard players set start StartRandom 0
 scoreboard players set random RandomEffect 0
 scoreboard players set random StopRandom 0
+scoreboard players set start StartKingOfTheHill 0
 
 # Create scoreboards for various triggers
 scoreboard objectives add gm trigger

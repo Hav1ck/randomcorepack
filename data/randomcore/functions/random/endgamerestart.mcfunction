@@ -34,10 +34,22 @@ tp @a 5 -12 0
 effect clear @a
 effect give @a saturation infinite 0 true
 
-fill 1179 40 1541 1221 25 1499 minecraft:air
-setblock 1221 29 1520 minecraft:bedrock
-setblock 1200 29 1499 minecraft:bedrock
-setblock 1179 29 1520 minecraft:bedrock
-setblock 1200 29 1541 minecraft:bedrock
-fill 1199 29 1521 1201 29 1519 minecraft:bedrock
-
+scoreboard players set @a minigamemenu 1
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":""}
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":""}
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":""}
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":""}
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":""}
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":""}
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":""}
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":""}
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":"Welcome to the Minigame Core!","color":"gold","bold":true}
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":""}
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":"Click here to start random!","color":"aqua","underlined":true,"clickEvent":{"action":"run_command","value":"/function randomcore:random/startrandom"}}
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":""}
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":"Click here to start king of the hill!","color":"aqua","underlined":true,"clickEvent":{"action":"run_command","value":"/function randomcore:kingofthehill/startkingofthehill"}}
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":""}
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":"Click here to start parkour!","color":"aqua","underlined":true,"clickEvent":{"action":"run_command","value":"/tp @s 849 -6 1101"}}
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":""}
+tellraw @a[scores={minigamemenu=1,OpPlayer=1}] {"text":"Have fun and good luck!","color":"yellow","italic":true}
+scoreboard players set @a minigamemenu 0
