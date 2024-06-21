@@ -15,6 +15,8 @@ scoreboard objectives add StartKingOfTheHill dummy
 scoreboard players set startkingofthehill Timer 0
 scoreboard players add endkingofthehill Timer 0
 scoreboard players set start StartKingOfTheHill 1
+scoreboard players set @a Timer 0
+scoreboard players set @a TimerSecond 0
 
 # Set title display times
 title @a times 1 20 1
